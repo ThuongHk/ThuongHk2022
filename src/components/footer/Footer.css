@@ -1,0 +1,38 @@
+.footer{
+    height: 230px;
+    background-color: pink;
+}
+.footer .left{
+    line-height: 5px;
+    text-align: justify;
+    padding-left: 200px;
+}
+.footer .right .row{
+   margin-top: 100px;
+}
+.footer .right .row i{
+    font-size:35px;
+    margin-left: 10px;
+   
+
+}
+.fa-google-plus-g{
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+}
+.fa-facebook-square{
+    background-color: white;
+    color: #0078D7;
+    border-radius: 4px;
+
+}
+.fa-youtube{
+    background-color: white;
+    color: #FF0000;
+    border-radius: 4px;
+}
+
+/* .container-fluid .footer-bt .text-center{   
+    text-align: center;
+} */

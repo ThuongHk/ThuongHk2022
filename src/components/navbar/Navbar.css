@@ -1,0 +1,18 @@
+.justify-content-start{
+    height: 60px;
+    line-height: 60px;
+}
+.light{
+    color: white;
+}
+.dark{
+    color: pink;
+}
+.fa-windows{
+    line-height: 60px;
+    font-size: 40px;
+    color: pink;
+}
+.navbar a{
+    font-size: 18px;
+}
