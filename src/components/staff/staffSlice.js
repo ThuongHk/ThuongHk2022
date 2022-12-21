@@ -40,8 +40,7 @@ const staffSlice = createSlice({
 
 export const getStaff = createAsyncThunk('staff/getStaff', async ()=>{
     const res = await fetch(' https://rjs101xbackend.herokuapp.com/')
-    const data = await res.json()
-    console.log(data);
+    const data = await res.json()   
     return data
 })
 
@@ -68,7 +67,8 @@ export const editStaff = createAsyncThunk('staff/editStaff', async (staff)=> {
 
 export const deleteStaff = createAsyncThunk('staff/deleteStaff', async (staffId)=>{
     const res = await fetch(`https://rjs101xbackend.herokuapp.com/staffs/${staffId}`,{
-        method: 'DELETE'
+        method: 'DELETE',
+        headers: {'Content-Type': 'application/json'}
     }).then(data => data.json())
     return res
 })

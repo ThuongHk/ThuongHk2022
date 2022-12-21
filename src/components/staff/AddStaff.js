@@ -53,7 +53,7 @@ const AddStaff = () => {
         annualLeave: data.annualLeave,
         overTime: data.overTime,
         image: "/assets/images/alberto.png"
-       })).then(()=>dispatch(getStaff))
+       })).then(()=>dispatch(getStaff()))
        setModal(false)
     }
     // ----modal
@@ -67,7 +67,7 @@ const AddStaff = () => {
                 +
             </Button>
             <Modal isOpen={modal} toggle={toggle} >
-                <ModalHeader toggle={toggle}>Thông Tin Nhân Viên Mới</ModalHeader>
+                <ModalHeader  toggle={toggle}>Thông Tin Nhân Viên Mới</ModalHeader>
                 <ModalBody>
                   <form onSubmit={handleSubmit(submitForm)}>
                     <div className="form-group">
